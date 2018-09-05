@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /** 
-* @Title: 服务提供者
+* @Title: 服务生产者
 * @author duanpj
 * @createtime 2018/9/5 9:28
 */
@@ -28,10 +28,10 @@ public class EurekaClientApplication {
     /**
      * defaultValue:默认
      * miAir = name
-     * http://localhost:8762/helloDuanpj?miAir=wwwww
+     * http://localhost:8762/clientTest?miAir=wwwww
      * */
-    @RequestMapping("/helloDuanpj")
-    public String home(@RequestParam(value = "miAir", defaultValue = "Aersenal") String name){
+    @RequestMapping("/clientTest")
+    public String test(@RequestParam(value = "miAir", defaultValue = "Aersenal") String name){
         return "hi " + name + " ,i am from port:" + port;
     }
 

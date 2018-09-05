@@ -22,6 +22,7 @@
     <modules>
         <module>eureka-server</module>
         <module>eureka-client</module>
+        <module>Service-Ribbon</module>
     </modules>
 
     <properties>
