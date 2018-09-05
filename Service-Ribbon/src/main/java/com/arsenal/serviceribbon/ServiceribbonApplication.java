@@ -14,7 +14,7 @@ import org.springframework.web.client.RestTemplate;
 * @createtime 2018/9/5 19:46
 */
 @EnableEurekaClient
-@EnableDiscoveryClient
+/*@EnableDiscoveryClient*/
 @SpringBootApplication
 public class ServiceribbonApplication {
 
