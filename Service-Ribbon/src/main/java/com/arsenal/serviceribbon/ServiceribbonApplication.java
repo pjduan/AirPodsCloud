@@ -5,16 +5,20 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 /**
-* @Title: 负载均衡(服务消费者)
- * 在工程的启动类中,通过@EnableDiscoveryClient向服务中心注册；
+* 负载均衡(服务消费者)
 * @createtime 2018/9/5 19:46
 */
+/**
+ * 加入熔断器(Hystrix)
+* @createtime 2018/9/6 15:42
+*/
+@EnableHystrix
 @EnableEurekaClient
-/*@EnableDiscoveryClient*/
 @SpringBootApplication
 public class ServiceribbonApplication {
 

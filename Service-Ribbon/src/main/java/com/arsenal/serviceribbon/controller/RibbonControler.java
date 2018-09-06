@@ -1,6 +1,7 @@
 package com.arsenal.serviceribbon.controller;
 
-import com.arsenal.serviceribbon.service.HelloService;
+import com.arsenal.serviceribbon.service.RibbonService;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -19,11 +20,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class RibbonControler {
 
     @Autowired
-    HelloService helloService;
+    RibbonService ribbonService;
 
     @GetMapping(value = "/ribbonHi")
     public String meiGuiHi(@RequestParam String name){
-        return helloService.hiService(name);
+        return ribbonService.hiService(name);
     }
 
 }
