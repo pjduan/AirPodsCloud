@@ -20,9 +20,10 @@
     </parent>
 
     <modules>
-        <module>eureka-server</module>
-        <module>eureka-client</module>
+        <module>Eureka-Client</module>
+        <module>Eureka-Server</module>
         <module>Service-Ribbon</module>
+        <module>Service-Feign</module>
     </modules>
 
     <properties>
