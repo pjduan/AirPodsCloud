@@ -32,7 +32,21 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+<<<<<<< HEAD
 
+=======
+        <!-- 引入Swagger-ui -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.2.2</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.2.2</version>
+        </dependency>
+>>>>>>> ba45834... 加入 Swagger-Ui 组件
     </dependencies>
 
     <build>
