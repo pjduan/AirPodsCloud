@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  *      (Eureka-Client工程中的application.yml)
  * @createtime 2018/9/6 16:25
  *
- *  @FeignClient 的SchedualServiceHi接口的注解中加上 fallback的指定s类就行了
+ *  @FeignClient 的SchedualServiceHi接口的注解中加上 fallback的指定类就行了
  */
 @Service
 @FeignClient(value="eureka-client",fallback = SchedualServiceHiHystric.class)
