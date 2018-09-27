@@ -1,9 +1,7 @@
 package com.arsenal.eurekaclient.controller;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @Auther: Pjduan
@@ -11,6 +9,18 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class ClientController {
+
+    /** 
+    * @Title: 第一次配置Apollo
+    * @createtime 2018/9/27 16:35
+    */
+    @Value("${spring.datasource.url}")
+    private String msg;
+    @GetMapping("/duanMsg")
+    public String testhaha(){
+        return msg;
+    }
+
 
     @Value("${server.port}")
     String port;
