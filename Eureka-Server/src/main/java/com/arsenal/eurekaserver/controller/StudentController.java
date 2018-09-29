@@ -22,7 +22,7 @@ public class StudentController {
 
     @GetMapping("/getAllStudent")
     public List<Student> getAllStudent() {
-
+        logger.info("cocacola");
         logger.info("访问getAllStudent方法");
         return studentRepository.findAll();
     }
